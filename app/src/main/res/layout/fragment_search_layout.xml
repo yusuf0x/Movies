@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/movieSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search movie"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchMoviesRecyclerView"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        tools:listitem="@layout/each_movie_layout"
+        android:layout_height="wrap_content"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:orientation="vertical"
+        tools:scrollbars="horizontal"
+        tools:spanCount="2"/>
+</LinearLayout>
