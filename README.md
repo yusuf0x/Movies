@@ -1,4 +1,5 @@
 # Movies
+Android Movie App for displaying all popular movies, search any movie, find information about it and save it locally as a favourite movie made by using  The Movie Database API
 # Screenshots
 <br>
 <table>
